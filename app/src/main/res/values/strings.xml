@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">长白山滑雪场租借管理</string>
+
+    <string name="card_info_user_name">客户姓名</string>
+    <string name="card_info_user_id_num">证件号码</string>
+    <string name="card_info_user_phone">手机号码</string>
+    <string name="card_info_user_type">客户类型</string>
+    <string name="card_info_ticket_type">票种&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="card_info_ski_gear">自带雪具</string>
+    <string name="card_info_type">卡类型&#160;&#160;&#160;&#160;</string>
+    <string name="card_info_num">ID卡号&#160;&#160;&#160;&#160;</string>
+    <string name="card_info_foregift">押金&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="card_info_balance">余额&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="card_info_equipment_name">器材名称</string>
+    <string name="card_info_equipment_num">数量</string>
+    <string name="card_info_equipment_state">使用状态</string>
+    <string name="card_info_equipment_repertory">库存</string>
+    <string name="card_info_equipment_select_all">全选</string>
+
+    <string name="expense_card_no">ID卡号</string>
+    <string name="expense_goods">消费项目</string>
+    <string name="expense_state">状态</string>
+    <string name="expense_count">合计</string>
+    <string name="expense_fixed_price">固定消费（元）</string>
+    <string name="expense_timeout_price">超时金额（元）</string>
+    <string name="expense_start_time">开始时间：</string>
+    <string name="expense_end_time">结束时间：</string>
+    <string name="expense_timeout">超时：</string>
+    <string name="expense_compensate_name">名称</string>
+    <string name="expense_compensate_price">赔偿金额（元）</string>
+    <string name="expense_compensate_description">描述</string>
+
+    <string name="rent_btn">租借</string>
+
+    <string name="return_btn">归还</string>
+    <string name="return_time">租借时间</string>
+
+    <string name="compensate_btn">赔偿</string>
+    <string name="compensate_price">赔偿金额(元)</string>
+    <string name="compensate_y">元</string>
+
+</resources>

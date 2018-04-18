@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="20dp">
+
+    <include layout="@layout/card_info_fragment" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/tab_background_select"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/card_info_equipment_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/card_info_text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/card_info_equipment_repertory"
+                android:textColor="@color/white"
+                android:textSize="@dimen/card_info_text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/return_time"
+                android:textColor="@color/white"
+                android:textSize="@dimen/card_info_text" />
+
+            <RelativeLayout
+                android:id="@+id/rl_check_all"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:id="@+id/iv_check_all"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_right_normal"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/iv_check_all"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/card_info_equipment_select_all"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/card_info_text" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/return_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/return_btn"
+                android:textSize="@dimen/card_info_text"
+                android:textColor="@color/white"
+                android:background="@color/btn"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/return_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/rent_btn"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@color/tab_background_select">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:text="提交"
+            android:textColor="@color/user_btn_submit"
+            android:textSize="@dimen/card_info_text" />
+
+        <EditText
+            android:id="@+id/et_card_num"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_toLeftOf="@id/btn_submit"
+            android:background="@color/white" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:layout_width="@dimen/customer_tv_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_info_user_name"
+                    android:textColor="@color/card_info_text"
+                    android:textSize="@dimen/card_info_text" />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="@dimen/customer_tv_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_info_user_id_num"
+                    android:textColor="@color/card_info_text"
+                    android:textSize="@dimen/card_info_text" />
+
+                <TextView
+                    android:id="@+id/tv_user_id_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="@dimen/customer_tv_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_info_user_phone"
+                    android:textColor="@color/card_info_text"
+                    android:textSize="@dimen/card_info_text" />
+
+                <TextView
+                    android:id="@+id/tv_user_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/card_info_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:layout_width="@dimen/customer_tv_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_info_user_type"
+                    android:textColor="@color/card_info_text"
+                    android:textSize="@dimen/card_info_text" />
+
+                <TextView
+                    android:id="@+id/tv_user_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="@dimen/customer_tv_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_info_ticket_type"
+                    android:textColor="@color/card_info_text"
+                    android:textSize="@dimen/card_info_text" />
+
+                <TextView
+                    android:id="@+id/tv_ticket_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="@dimen/customer_tv_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_info_ski_gear"
+                    android:textColor="@color/card_info_text"
+                    android:textSize="@dimen/card_info_text" />
+
+                <TextView
+                    android:id="@+id/tv_ski_gear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/card_info_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:layout_width="@dimen/customer_tv_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_info_type"
+                    android:textColor="@color/card_info_text"
+                    android:textSize="@dimen/card_info_text" />
+
+                <TextView
+                    android:id="@+id/tv_card_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="@dimen/customer_tv_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_info_num"
+                    android:textColor="@color/card_info_text"
+                    android:textSize="@dimen/card_info_text" />
+
+                <TextView
+                    android:id="@+id/tv_card_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="@dimen/customer_tv_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_info_foregift"
+                    android:textColor="@color/card_info_text"
+                    android:textSize="@dimen/card_info_text" />
+
+                <TextView
+                    android:id="@+id/tv_foregift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/status_use"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="@dimen/customer_tv_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_info_balance"
+                    android:textColor="@color/card_info_text"
+                    android:textSize="@dimen/card_info_text" />
+
+                <TextView
+                    android:id="@+id/tv_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/status_use"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_rent_message_line"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/card_info_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_rent_message_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/card_info_equipment_background"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/card_info_equipment_name"
+                    android:textColor="@color/card_info_equipment"
+                    android:textSize="@dimen/card_info_text" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/card_info_equipment_num"
+                    android:textColor="@color/card_info_equipment"
+                    android:textSize="@dimen/card_info_text" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/card_info_equipment_state"
+                    android:textColor="@color/card_info_equipment"
+                    android:textSize="@dimen/card_info_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_rent_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
