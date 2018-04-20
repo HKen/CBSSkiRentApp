@@ -1,8 +1,4 @@
-package com.smallpay.app.ski.rent.data.entity;
-
-import com.chad.library.adapter.base.entity.AbstractExpandableItem;
-import com.chad.library.adapter.base.entity.MultiItemEntity;
-import com.smallpay.app.ski.rent.ui.adapter.RentAdapter;
+package com.smallpay.app.ski.rent.data.model;
 
 /**
  * @author ken

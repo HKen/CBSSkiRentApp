@@ -6,8 +6,8 @@ import com.chad.library.adapter.base.BaseMultiItemQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.chad.library.adapter.base.entity.MultiItemEntity;
 import com.smallpay.app.ski.rent.R;
-import com.smallpay.app.ski.rent.data.entity.RentItem;
-import com.smallpay.app.ski.rent.data.entity.RentSubItem;
+import com.smallpay.app.ski.rent.data.model.RentItem;
+import com.smallpay.app.ski.rent.data.model.RentSubItem;
 
 import java.util.List;
 

@@ -1,11 +1,11 @@
-package com.smallpay.app.ski.rent.data.entity;
+package com.smallpay.app.ski.rent.data.model;
 
 /**
  * @author ken
  * @date 2018/3/21.
  */
 
-public class Goods {
+public class RentMessage {
 
     private int id;
     private String goods_name;
@@ -21,11 +21,6 @@ public class Goods {
     private String update_time;
     private String create_time;
     private String order_code;
-
-    private int amount;
-    private String comment;
-
-    private boolean checked;
 
     public int getId() {
         return id;
@@ -137,29 +132,5 @@ public class Goods {
 
     public void setOrder_code(String order_code) {
         this.order_code = order_code;
-    }
-
-    public boolean isChecked() {
-        return checked;
-    }
-
-    public void setChecked(boolean checked) {
-        this.checked = checked;
-    }
-
-    public int getAmount() {
-        return amount;
-    }
-
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
-
-    public String getComment() {
-        return comment;
-    }
-
-    public void setComment(String comment) {
-        this.comment = comment;
     }
 }

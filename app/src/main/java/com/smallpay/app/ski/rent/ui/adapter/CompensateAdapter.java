@@ -4,17 +4,13 @@ import android.support.annotation.Nullable;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.view.View;
 import android.widget.EditText;
 
-import com.alibaba.fastjson.JSON;
 import com.blankj.utilcode.util.LogUtils;
-import com.blankj.utilcode.util.ToastUtils;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.smallpay.app.ski.rent.R;
-import com.smallpay.app.ski.rent.data.entity.CompensateItem;
-import com.smallpay.app.ski.rent.data.entity.Goods;
+import com.smallpay.app.ski.rent.data.model.Goods;
 
 import java.util.List;
 

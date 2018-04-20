@@ -5,8 +5,7 @@ import android.support.annotation.Nullable;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.smallpay.app.ski.rent.R;
-import com.smallpay.app.ski.rent.data.entity.Goods;
-import com.smallpay.app.ski.rent.data.entity.ReturnItem;
+import com.smallpay.app.ski.rent.data.model.Goods;
 
 import java.util.List;
 

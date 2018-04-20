@@ -1,17 +1,11 @@
 package com.smallpay.app.ski.rent.ui.adapter;
 
 import android.support.annotation.Nullable;
-import android.text.Editable;
-import android.text.TextUtils;
-import android.text.TextWatcher;
-import android.widget.EditText;
 
-import com.blankj.utilcode.util.LogUtils;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.smallpay.app.ski.rent.R;
-import com.smallpay.app.ski.rent.data.entity.CompensateOrder;
-import com.smallpay.app.ski.rent.data.entity.Goods;
+import com.smallpay.app.ski.rent.data.model.CompensateOrder;
 
 import java.util.List;
 

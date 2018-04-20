@@ -1,6 +1,4 @@
-package com.smallpay.app.ski.rent.data.entity;
-
-import java.util.List;
+package com.smallpay.app.ski.rent.data.model;
 
 /**
  * @author ken

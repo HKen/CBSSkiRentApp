@@ -1,22 +1,18 @@
-package com.smallpay.app.ski.rent.data.entity;
+package com.smallpay.app.ski.rent.data.model;
 
-import com.chad.library.adapter.base.entity.AbstractExpandableItem;
 import com.chad.library.adapter.base.entity.MultiItemEntity;
 import com.smallpay.app.ski.rent.ui.adapter.RentAdapter;
-
-import java.util.List;
 
 /**
  * @author ken
  * @date 2018/3/19.
  */
 
-public class RentItem extends AbstractExpandableItem<RentSubItem> implements MultiItemEntity {
+public class RentSubItem implements MultiItemEntity {
 
     private int id;
     private int can_rent;
     private int[] group_goods_ids;
-    private List<RentSubItem> sub_goods;
     private int merchant_id;
     private int category_id;
     private String category_name;
@@ -45,13 +41,8 @@ public class RentItem extends AbstractExpandableItem<RentSubItem> implements Mul
     }
 
     @Override
-    public int getLevel() {
-        return 0;
-    }
-
-    @Override
     public int getItemType() {
-        return RentAdapter.TYPE_RENT_0;
+        return RentAdapter.TYPE_RENT_SUB_1;
     }
 
     public int getId() {
@@ -76,14 +67,6 @@ public class RentItem extends AbstractExpandableItem<RentSubItem> implements Mul
 
     public void setGroup_goods_ids(int[] group_goods_ids) {
         this.group_goods_ids = group_goods_ids;
-    }
-
-    public List<RentSubItem> getSub_goods() {
-        return sub_goods;
-    }
-
-    public void setSub_goods(List<RentSubItem> sub_goods) {
-        this.sub_goods = sub_goods;
     }
 
     public int getMerchant_id() {
