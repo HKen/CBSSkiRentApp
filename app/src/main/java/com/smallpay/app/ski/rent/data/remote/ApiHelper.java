@@ -30,6 +30,6 @@ import io.reactivex.Single;
 
 public interface ApiHelper {
 
-    Single<LoginResponse> doLoginApiCall(LoginRequest.FacebookLoginRequest request);
+    Single<LoginResponse> doLoginApiCall();
 
 }
