@@ -16,11 +16,7 @@
 
 package com.smallpay.app.ski.rent.data.remote;
 
-import com.mindorks.framework.mvvm.data.model.api.BlogResponse;
-import com.mindorks.framework.mvvm.data.model.api.LoginRequest;
-import com.mindorks.framework.mvvm.data.model.api.LoginResponse;
-import com.mindorks.framework.mvvm.data.model.api.LogoutResponse;
-import com.mindorks.framework.mvvm.data.model.api.OpenSourceResponse;
+import com.zhouyou.http.request.PostRequest;
 
 import io.reactivex.Single;
 
@@ -30,6 +26,6 @@ import io.reactivex.Single;
 
 public interface ApiHelper {
 
-    Single<LoginResponse> doLoginApiCall();
+    PostRequest doPostRequest();
 
 }
